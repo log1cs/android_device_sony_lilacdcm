@@ -16,14 +16,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_lilac
-PRODUCT_DEVICE := lilac
+PRODUCT_NAME := lineage_lilacdcm
+PRODUCT_DEVICE := lilacdcm
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_BRAND := Sony
-PRODUCT_MODEL := G8441
+PRODUCT_BRAND := docomo
+PRODUCT_MODEL := SO-02K
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="G8441-user 9 47.2.A.11.228 3311891731 release-keys" \
-    BuildFingerprint=Sony/G8441/G8441:9/47.2.A.11.228/3311891731:user/release-keys
+    BuildDesc="SO-02K-user 9 47.2.B.5.38 4216219063 release-keys" \
+    BuildFingerprint=docomo/SO-02K/SO-02K:9/47.2.B.5.38/4216219063:user/release-keys

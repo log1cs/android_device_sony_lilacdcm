@@ -1,1 +1,1 @@
-require board=lilac|G8441
+require board=lilac|SO-02K
