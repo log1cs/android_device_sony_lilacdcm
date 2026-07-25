@@ -10,19 +10,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Indicate the first API level the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 27
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_NAME := lineage_lilacdcm
+PRODUCT_NAME := aosp_lilacdcm
 PRODUCT_DEVICE := lilacdcm
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := docomo
 PRODUCT_MODEL := SO-02K
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
+
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_CALL_RECORDING_SUPPORTED := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="SO-02K-user 9 47.2.B.5.38 4216219063 release-keys" \

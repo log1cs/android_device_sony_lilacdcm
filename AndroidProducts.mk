@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lilacdcm.mk
+    $(LOCAL_DIR)/aosp_lilacdcm.mk
